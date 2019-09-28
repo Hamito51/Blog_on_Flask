@@ -15,7 +15,7 @@ post_tags = db.Table('post_tags',
 	)
 
 class Post(db.Model):
-	"""Structure for posts, using in out website"""
+	"""Structure for posts, using in our website"""
 	id = db.Column(db.Integer, primary_key=True)
 	title = db.Column(db.String(140))
 	slug = db.Column(db.String(100), unique=True)
@@ -37,7 +37,7 @@ class Post(db.Model):
 
 
 class Tag(db.Model):
-	"""Structure for tags, using in out website"""
+	"""Structure for tags, using in our website"""
 	id = db.Column(db.Integer, primary_key=True)
 	name = db.Column(db.String(100))
 	slug = db.Column(db.String(100), unique=True)
